@@ -1,0 +1,32 @@
+[package]
+name = "boost_mysql"
+description = "Boost C++ library boost_mysql packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_mysql"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_mysql"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_asio = { version = "0.1.0", path = "../boost_asio" }
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_charconv = { version = "0.1.0", path = "../boost_charconv" }
+boost_compat = { version = "0.1.0", path = "../boost_compat" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_container = { version = "0.1.0", path = "../boost_container" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_describe = { version = "0.1.0", path = "../boost_describe" }
+boost_endian = { version = "0.1.0", path = "../boost_endian" }
+boost_intrusive = { version = "0.1.0", path = "../boost_intrusive" }
+boost_mp11 = { version = "0.1.0", path = "../boost_mp11" }
+boost_optional = { version = "0.1.0", path = "../boost_optional" }
+boost_pfr = { version = "0.1.0", path = "../boost_pfr" }
+boost_system = { version = "0.1.0", path = "../boost_system" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_variant2 = { version = "0.1.0", path = "../boost_variant2" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
